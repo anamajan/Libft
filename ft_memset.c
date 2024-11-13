@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:35:23 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 17:24:28 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/13 01:59:59 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	*ft_memset(void *ptr, int x, size_t n)
 	return (ptr);
 }
 
-#include <stdio.h>
 
 /*int	main()
 {

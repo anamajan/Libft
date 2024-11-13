@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 10:44:44 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 18:52:20 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/13 01:59:52 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	if (!dst && !src)
 		return (NULL);
+	if (dst == src)
+		return (dst);
 	from = (unsigned char *) src;
 	to = (unsigned char *) dst;
 	if (to > from)
 	{
 		while (len-- > 0)
-		{
 			to[len] = from[len];
-		}
 	}
 	else
 	{
@@ -41,13 +41,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-int	main()
+/*int	main()
 {
-	char	data[] = "ABCDE";
-	char	data2[] = "ABCDE";
+	char	data[] = "abcdefgh";
+	char	tt[] = "abcdefgh";
 
-	ft_memmove(data + 2, data, 3);
+	ft_memmove(data + 2, data, 6);
 	printf("Mine: %s\n", data);
-	memmove(data2 + 2, data2, 3);
-	printf("Orig: %s", data2);
-}
+	memmove(tt + 2, tt, 6);
+	printf("Orig: %s", tt);
+}*/

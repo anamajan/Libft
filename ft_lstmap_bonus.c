@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anaamaja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 10:16:18 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 11:48:46 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 00:53:44 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,44 +34,16 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_list);
 }
 
-void	*f(void *content)
-{
-	int	*new_value = malloc(sizeof(int));
-	if (!new_value)
-		return (NULL);
-	*new_value = *(int *)content + 10;
-	return (new_value);
-}
+// int	main()
+// {
+// 	int	a = 1, b = 2, c = 3;
 
-void	del(void *content)
-{
-	free(content);
-}
+// 	t_list	*node1 = ft_lstnew(ft_strdup(&a));
+// 	t_list	*node2 = ft_lstnew(ft_strdup(&b));
+// 	t_list	*node3 = ft_lstnew(ft_strdup(&c));
 
-void	print_list(t_list *lst)
-{
-	int	*ptr;
-	while (lst)
-	{
-		ptr = lst->content;
-		printf("%d -> ", *ptr);
-		lst = lst->next;
-	}
-	printf("NULL\n");
-}
-
-int	main()
-{
-	int	a = 1, b = 2, c = 3;
-	t_list	*node1 = ft_lstnew(&a);
-	t_list	*node2 = ft_lstnew(&b);
-	t_list	*node3 = ft_lstnew(&c);
-
-	node1->next = node2;
-	node2->next = node3;
-	node3->next = NULL;
-
-	print_list(node1);
-	t_list	*new_list = ft_lstmap(node1, f, del);
-	print_list(new_list);
-}
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	node3->next = NULL;
+	
+// }

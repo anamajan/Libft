@@ -1,43 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anaamaja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/07 14:02:05 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/08 11:20:40 by anaamaja         ###   ########.fr       */
+/*   Created: 2024/11/10 18:20:39 by anaamaja          #+#    #+#             */
+/*   Updated: 2024/11/13 05:32:34 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	int	i;
-
-	i = 0;
 	while (lst != NULL)
 	{
-		i++;
+		f(lst->content);
 		lst = lst->next;
 	}
-	return (i);
+}
+
+/*void	f(void *content)
+{
+	printf("%s -> ", (char *)content);
 }
 
 int	main()
 {
-	t_list	*node1 = ft_lstnew("Node 1");
-	t_list	*node2 = ft_lstnew(NULL);
-	t_list	*node3 = ft_lstnew("Node 3");
-	int	size;
+	t_list	*node1 = ft_lstnew("Hello");
+	t_list	*node2 = ft_lstnew("My name");
+	t_list	*node3 = ft_lstnew("Anass");
 
 	node1->next = node2;
 	node2->next = node3;
 	node3->next = NULL;
-	size = ft_lstsize(node1);
-	printf("%d", size);
-	free(node1);
-	free(node2);
-	free(node3);
-}
+
+	ft_lstiter(node1, f);
+}*/

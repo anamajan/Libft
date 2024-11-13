@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 06:46:04 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/11 13:29:02 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/13 02:00:10 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_putnbr_fd(int n, int fd)
 	write (fd, &c, 1);
 }
 
-#include <fcntl.h>
+/*#include <fcntl.h>
 
 int main()
 {
@@ -39,4 +39,4 @@ int main()
     ft_putnbr_fd(-2147483648, fd);
     close(fd);
     return (0);
-}
+}*/

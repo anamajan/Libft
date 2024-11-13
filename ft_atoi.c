@@ -6,12 +6,11 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:34:42 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 18:21:07 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 00:12:43 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
@@ -22,7 +21,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	result = 0;
-	while (str[i] == 32 || (str[i] >= 8 && str[i] <= 13))
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	if (str[i] == '-')
 		sign *= -1;

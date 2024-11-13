@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:35:53 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/11 13:31:15 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 00:52:47 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	unsigned char	*s22;
 
 	i = 0;
+	if (n == 0)
+		return (0);
 	s11 = (unsigned char *)s1;
 	s22 = (unsigned char *)s2;
 	while ((s11[i] != '\0' || s22[i] != '\0') && i < n)
@@ -31,3 +33,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+// }
+// int	main()
+// {
+// 	char	str[] = "ali1";
+// 	char	str2[] = "ali6";
+
+// 	printf("%d\n", ft_strncmp(str, str2, 4));
+// 	printf("%d\n", strncmp(str, str2, 4));
+// }

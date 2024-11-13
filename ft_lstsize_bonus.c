@@ -1,40 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 06:45:05 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 02:00:24 by anaamaja         ###   ########.fr       */
+/*   Created: 2024/11/07 14:02:05 by anaamaja          #+#    #+#             */
+/*   Updated: 2024/11/14 00:22:45 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+int	ft_lstsize(t_list *lst)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (s[i])
+	while (lst != NULL)
 	{
-		f(i, &s[i]);
 		i++;
+		lst = lst->next;
 	}
+	return (i);
 }
-
-
-/*void    f(unsigned int i, char *c)
-{
-    if (i % 2 == 0)
-        *c = ft_toupper(*c);
-}
-
-int main()
-{
-    char    str[] = "hello world";
-
-    ft_striteri(str, f);
-    printf ("%s", str);
-}*/

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anaamaja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 19:59:06 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/10 19:36:14 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 00:20:43 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	free(lst);
 }
 
-void	del(void *content)
+/*void	del(void *content)
 {
 	free(content);
 }
@@ -51,4 +51,4 @@ int	main()
 	printf("Re-linking: ");
 	node1->next = node3;
 	printf_lstnew(node1);
-}
+}*/

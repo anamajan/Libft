@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anaamaja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:03:35 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/08 16:17:52 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/13 05:30:09 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-int	main()
+/*int	main()
 {
 	t_list	*node1 = ft_lstnew("Node1");
 	t_list	*node2 = ft_lstnew("Node2");
@@ -35,4 +35,4 @@ int	main()
 	t_list	*last = ft_lstlast(node1);
 	printf("Last node content: %s\n", (char *)last->content);
 	printf("Last node next: %s", (char *)last->next);
-}
+}*/

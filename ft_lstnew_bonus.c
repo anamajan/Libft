@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anaamaja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 00:18:36 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 11:39:53 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 00:26:21 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ t_list	*ft_lstnew(void *content)
 	head->next = NULL;
 	return (head);
 }
-
-/*int	main()
-{
-	char	*content = "hello, this is my first linked list function";
-	t_list	*node = ft_lstnew(content);
-
-	printf("%s\n", (char *)node->content);
-	free (node);
-}*/
