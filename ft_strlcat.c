@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:35:43 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 02:21:43 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 05:04:49 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (src_len + dst_len);
 }
-
-/*int	main()
-{
-	//char	dest[20] = "hello ";
-	char	src[] = "world!";
-	
-	//char	dest2[12] = "hello ";
-	char	src2[] = "world!";
-
-	printf("%zu\n", ft_strlcat(NULL, src, 0));
-
-	printf("%zu", strlcat(NULL, src2, 0));
-}*/

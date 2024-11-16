@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 06:45:05 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 02:00:24 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 08:24:34 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
 
+	if (!s || !f)
+		return ;
 	i = 0;
 	while (s[i])
 	{
@@ -23,18 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-
-/*void    f(unsigned int i, char *c)
-{
-    if (i % 2 == 0)
-        *c = ft_toupper(*c);
-}
-
-int main()
-{
-    char    str[] = "hello world";
-
-    ft_striteri(str, f);
-    printf ("%s", str);
-}*/

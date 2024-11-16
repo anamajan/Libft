@@ -15,7 +15,7 @@ SRCSB = ft_lstnew_bonus.c ft_lstadd_front_bonus.c \
 
 OBJS = $(SRCS:.c=.o)
 OBJSB = $(SRCSB:.c=.o)
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
@@ -34,7 +34,7 @@ clean:
 	rm -f $(OBJS) $(OBJSB)
 
 fclean: clean
-	rm -f $(NAME) $(bonus)
+	rm -f $(NAME)
 
 re: fclean all
 

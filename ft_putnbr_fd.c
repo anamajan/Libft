@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 06:46:04 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 02:00:10 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 08:23:39 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd((nb / 10), fd);
 	write (fd, &c, 1);
 }
-
-/*#include <fcntl.h>
-
-int main()
-{
-    int fd = open ("hello.txt", O_WRONLY | O_CREAT, 0644);
-
-    ft_putnbr_fd(-2147483648, fd);
-    close(fd);
-    return (0);
-}*/

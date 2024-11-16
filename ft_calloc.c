@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:34:50 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 02:56:45 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 04:55:59 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char		*str;
+	char				*str;
 	size_t				i;
 	size_t				total;
 

@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:35:39 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 22:08:54 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 05:58:11 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		total_len;
 	char	*str;
-	int		(i), (j);
 
+	int (i), (j);
 	i = 0;
 	j = 0;
 	if (!s1 && !s2)

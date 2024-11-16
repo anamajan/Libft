@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 12:23:18 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 05:52:20 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 08:19:17 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*ptr;
 	t_list	*temp;
 
+	if (!lst || !del)
+		return ;
 	ptr = *lst;
 	while (ptr != NULL)
 	{
@@ -27,33 +29,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
-/*
-void	del(void *content)
-{
-	free(content);
-}
-
-void	print_node(t_list *lst)
-{
-	while (lst)
-	{
-		printf("%s -> ", (char *)lst->content);
-		lst = lst->next;
-	}
-	printf("NULL\n");
-}
-
-int	main()
-{
-	t_list	*node1 = ft_lstnew(ft_strdup("Welcome"));
-	t_list	*node2 = ft_lstnew(ft_strdup("To"));
-	t_list	*node3 = ft_lstnew(ft_strdup("1337"));
-
-	node1->next = node2;
-	node2->next = node3;
-	node3->next = NULL;
-
-	print_node(node1);
-	ft_lstclear(&node1, del);
-	print_node(node1);
-}*/

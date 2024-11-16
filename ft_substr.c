@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:36:11 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 17:34:52 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 02:55:32 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		str[0] = '\0';
 		return (str);
 	}
-	if (len > s_len + start)
+	if (len > s_len - start)
 		len = s_len - start;
 	str = malloc(len + 1);
 	if (!str)

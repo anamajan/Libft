@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:34:48 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/12 12:07:57 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:06:09 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
-# include <string.h>
 # include <limits.h>
 
 void	*ft_memset(void *ptr, int x, size_t n);
@@ -62,7 +60,7 @@ typedef struct s_list
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
-int	ft_lstsize(t_list *lst);
+int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));

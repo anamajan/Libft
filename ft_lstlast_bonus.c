@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:03:35 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 05:30:09 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 08:19:33 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,3 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (lst);
 }
-
-/*int	main()
-{
-	t_list	*node1 = ft_lstnew("Node1");
-	t_list	*node2 = ft_lstnew("Node2");
-	t_list	*node3 = ft_lstnew("Node3");
-
-	node1->next = node2;
-	node2->next = node3;
-	node3->next = NULL;	
-	t_list	*last = ft_lstlast(node1);
-	printf("Last node content: %s\n", (char *)last->content);
-	printf("Last node next: %s", (char *)last->next);
-}*/

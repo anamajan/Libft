@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:36:06 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 02:01:24 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/15 15:39:16 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 
 	if (!s1)
-		return (NULL);
+		return (ft_strdup(""));
 	if (!set)
 		return (ft_strdup(s1));
 	start = 0;
@@ -52,12 +52,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = '\0';
 	return (str);
 }
-
-/*int main()
-{
-    char const  *s1 = "!!!!hello,world!!!!";
-    char const  *set = "abcdefghijklm,nopqrstuvwxyz";
-    char    *str = ft_strtrim(s1, set);
-
-    printf ("%s", str);
-}*/

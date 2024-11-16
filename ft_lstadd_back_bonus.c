@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anaamaja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:47:18 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/13 05:31:02 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/14 08:19:11 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,34 +28,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		last = last->next;
 	last->next = new;
 }
-/*
-void	print_list(t_list *lst)
-{
-	int	*pt;
-	while (lst)
-	{
-		pt = lst->content;
-		printf("%d -> ",  *pt);
-		lst = lst->next;
-	}
-	printf("NULL\n");
-}
-
-int	main()
-{
-	int	a = 1;
-	int	b = 3;
-	int	c = 3;
-	int	d = 7;
-	t_list	*node1 = ft_lstnew(&a);
-	t_list	*node2 = ft_lstnew(&b);
-	t_list	*node3 = ft_lstnew(&c);
-	t_list	*new = ft_lstnew(&d);
-
-	node1->next = node2;
-	node2->next = node3;
-	
-	print_list(node1);	
-	ft_lstadd_back(&node1, new);
-	print_list(node1);
-}*/

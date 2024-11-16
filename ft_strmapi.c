@@ -6,7 +6,7 @@
 /*   By: anaamaja <anaamaja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 04:20:35 by anaamaja          #+#    #+#             */
-/*   Updated: 2024/11/11 13:31:05 by anaamaja         ###   ########.fr       */
+/*   Updated: 2024/11/15 15:39:59 by anaamaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 	size_t			len;
 
+	if (!s)
+		return (ft_strdup(""));
+	if (!f)
+		return (ft_strdup(s));
 	i = 0;
 	len = ft_strlen(s);
 	str = malloc(sizeof(char) * (len + 1));
@@ -31,22 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-/*
-char    f(unsigned int i, char c)
-{
-    if (i % 2 == 0)
-        return (ft_toupper(c));
-    return (c);
-}
-
-int main()
-{
-    char    *original = "hey my name is chatgpt";
-    char    *new = ft_strmapi(original, f);
-
-    printf("Original: %s\n", original);
-    printf("New: %s", new);
-    free(new);
-    return (0);
-}*/
