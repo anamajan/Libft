@@ -1,1 +1,2 @@
-My first time creating a library 
+#Libft
+## The first project at the 42 school
